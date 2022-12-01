@@ -38,7 +38,7 @@ function Navbar() {
   return (
     <>
       <motion.nav animate={isOpen ? "open" : "closed"}>
-        <nav className='flex w-full h-16 z-10 fixed justify-between items-center px-8 bg-white/50 backdrop-blur-sm border-2 border-white/10'>
+        <nav className='flex w-full h-16 z-10 fixed justify-between items-center px-8 backdrop-blur-sm shadow'>
           {/* Logo */}
           <div>
             <p className='text-3xl font-[Montserrat] font-bold'>Test</p>
@@ -55,7 +55,7 @@ function Navbar() {
           {/* Hamburger */}
           <div className='flex sm:hidden' ref={menuRef}>
             <MenuToggle className='p-4' toggle={() => setIsOpen(!isOpen)} />
-            <motion.ul className='absolute bg-white w-[80%] left-0 right-0 top-20 m-auto'
+            <motion.ul className='absolute bg-navbarwhite w-[80%] left-0 right-0 top-20 m-auto'
               variants={{
                 open: {
                   clipPath: "inset(0% 0% 0% 0% round 10px)",

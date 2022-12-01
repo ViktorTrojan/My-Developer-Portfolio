@@ -8,6 +8,6 @@
 @layer base {
   html {
     @apply font-[Poppins];
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
   }
 }

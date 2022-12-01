@@ -14,8 +14,11 @@ module.exports = withMT({
     },
     extend: {
       colors: {
-        whiteblue: '#E3EFF2',
-        consolered: '#E63946'
+        lightblue: '#E3EFF2',
+        whiteblue: '#F0F0FE',
+        navbarwhite: 'rgb(250,250,254)',
+        consolered: '#E63946',
+        orange: '#FF6B35',
       }
     },
   },
