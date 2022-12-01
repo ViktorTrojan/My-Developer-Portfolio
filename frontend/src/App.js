@@ -9,12 +9,11 @@ function App() {
     <ThemeProvider>
       <div className="App">
         <Navbar />
-        {/* <Header />
         <About />
-        <Work />
+        {/* <Work />
         <Skills />
         <Testimonial />
-        <Footer /> */}
+        <Footer />  */}
       </div>
     </ThemeProvider>
   );
