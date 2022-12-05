@@ -2,7 +2,7 @@ import React from "react";
 import { ThemeProvider } from "@material-tailwind/react";
 
 import { About, Footer, Header, Skills, Testimonial, Work } from './container';
-import { Navbar } from './components'
+import { Contact, Navbar } from './components'
 
 function App() {
   return (
@@ -11,8 +11,10 @@ function App() {
         <Navbar />
         <About />
         <Skills />
-        {/* <Work />
-        <Skills />
+        <Work />
+        <Contact />
+        <Footer />
+        {/* <Skills />
         <Testimonial />
         <Footer />  */}
       </div>

@@ -47,7 +47,6 @@ function Navbar() {
           {/* Navbar Tags */}
           <ul className='hidden sm:flex'>
             <NavItem name='Home' />
-            <NavItem name='About' />
             <NavItem name='Work' />
             <NavItem name='Skills' />
             <NavItem name='Contact' />
@@ -78,11 +77,10 @@ function Navbar() {
               }}
               style={{ pointerEvents: isOpen ? "auto" : "none" }}>
               <div className="flex flex-col">
-                <motion.li className="p-3 uppercase mx-auto" whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}>Home</motion.li>
-                <motion.li className="p-3 uppercase mx-auto" whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}>About</motion.li>
-                <motion.li className="p-3 uppercase mx-auto" whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}>Work</motion.li>
-                <motion.li className="p-3 uppercase mx-auto" whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}>Skills</motion.li>
-                <motion.li className="p-3 uppercase mx-auto" whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}>Contact</motion.li>
+                <motion.li className="p-3 uppercase mx-auto" whileTap={{ scale: 0.96 }} whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}>Home</motion.li>
+                <motion.li className="p-3 uppercase mx-auto" whileTap={{ scale: 0.96 }} whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}>Skills</motion.li>
+                <motion.li className="p-3 uppercase mx-auto" whileTap={{ scale: 0.96 }} whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}>Work</motion.li>
+                <motion.li className="p-3 uppercase mx-auto" whileTap={{ scale: 0.96 }} whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}>Contact</motion.li>
               </div>
             </motion.ul>
           </div>
