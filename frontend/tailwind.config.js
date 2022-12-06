@@ -25,8 +25,9 @@ module.exports = withMT({
         consoleyellow: '#FFBE0B',
         consolegreen: '#A7C957',
         orange: '#FF6B35',
-        blue: '#084d93',
+        blue1: '#084d93',
         darkerBlue: '#0A2864',
+        grayBlue: '#EBE1FF',
       }
     },
   },
