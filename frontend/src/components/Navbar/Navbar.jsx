@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react'
 // import { Button } from "@material-tailwind/react";
 import MenuToggle from "../MenuToggle";
 import { images } from "../../constants";
+import {Link} from "react-scroll";
 
 const itemVariants = {
   open: {
@@ -31,7 +32,7 @@ function Navbar() {
 
   const NavItem = ({ name }) => {
     return (
-      <li className='py-4 px-3 uppercase hover:text-cyan-600 duration-300'>{name}</li>
+      <li className='py-4 px-3 uppercase hover:text-cyan-600 duration-300'><Link to={name.toLowerCase()} smooth={true} duration={500}>{name}</Link></li>
     );
   }
 
@@ -41,14 +42,14 @@ function Navbar() {
         <nav className='flex w-full h-16 z-10 fixed justify-between items-center px-8 backdrop-blur-sm shadow'>
           {/* Logo */}
           <div>
-            <p className='text-3xl font-[Montserrat] font-bold'>Test</p>
+            <p className='text-3xl font-[Montserrat] font-bold'>Viktor.T()</p>
           </div>
 
           {/* Navbar Tags */}
           <ul className='hidden sm:flex'>
             <NavItem name='Home' />
-            <NavItem name='Work' />
             <NavItem name='Skills' />
+            <NavItem name='Work' />
             <NavItem name='Contact' />
           </ul>
           {/* Hamburger */}
@@ -77,10 +78,10 @@ function Navbar() {
               }}
               style={{ pointerEvents: isOpen ? "auto" : "none" }}>
               <div className="flex flex-col">
-                <motion.li className="p-3 uppercase mx-auto" whileTap={{ scale: 0.96 }} whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}>Home</motion.li>
-                <motion.li className="p-3 uppercase mx-auto" whileTap={{ scale: 0.96 }} whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}>Skills</motion.li>
-                <motion.li className="p-3 uppercase mx-auto" whileTap={{ scale: 0.96 }} whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}>Work</motion.li>
-                <motion.li className="p-3 uppercase mx-auto" whileTap={{ scale: 0.96 }} whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}>Contact</motion.li>
+                <motion.li className="p-3 uppercase mx-auto" whileTap={{ scale: 0.96 }} whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}><Link to='home' smooth={true} duration={500}>Home</Link></motion.li>
+                <motion.li className="p-3 uppercase mx-auto" whileTap={{ scale: 0.96 }} whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}><Link to='skills' smooth={true} duration={500}>Skills</Link></motion.li>
+                <motion.li className="p-3 uppercase mx-auto" whileTap={{ scale: 0.96 }} whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}><Link to='work' smooth={true} duration={500}>Work</Link></motion.li>
+                <motion.li className="p-3 uppercase mx-auto" whileTap={{ scale: 0.96 }} whileHover={{ scale: 1.1, color: '#aa00aa', transition: { duration: 0.1 } }} variants={itemVariants}><Link to='contact' smooth={true} duration={500}>Contact</Link></motion.li>
               </div>
             </motion.ul>
           </div>

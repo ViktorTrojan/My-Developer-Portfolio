@@ -11,57 +11,54 @@ const projects = [
     id: 0,
     img: images.flappybird,
     title: "Flappy Bird",
-    description: "A Flappy Bird clone made in Python with Pygame. Uses original graphics and sound effects. Some of the Features are a death animation and a smaller forgiving collision-box",
-    link: 'https://example.com',
+    description: "A Flappy Bird clone made in Python with Pygame. Uses assets and sound effects from the original game.",
+    link: 'https://github.com/ViktorTrojan/Flappy-Bird',
     demo: 'https://example.com'
   },
   {
     id: 1,
-    img: images.figma,
+    img: images.pingponglogo,
     title: "SimplePong",
-    description: "Ping Pong Project that does this and that and is awesome",
-    link: 'https://example.com',
+    description: `A Game Group Project based on the simple Game "Retro Pong" made in Java`,
+    link: 'https://github.com/ViktorTrojan/SimplePong',
     demo: 'https://example.com'
   },
   {
     id: 2,
-    img: images.figma,
-    title: "SimplePong",
-    description: "Ping Pong Project that does this and that and is awesome",
-    link: 'https://example.com',
+    img: images.connect4,
+    title: "Connect4",
+    description: `Connect4 is a two-player connection board game based on the Original Game "Connect4" made in Java`,
+    link: 'https://github.com/ViktorTrojan/Connect4',
     demo: 'https://example.com'
   },
-  {
-    id: 3,
-    img: images.figma,
-    title: "SimplePong",
-    description: "Ping Pong Project that does this and that and is awesome",
-    link: 'https://example.com',
-    demo: 'https://example.com'
-  },
-  {
-    id: 4,
-    img: images.figma,
-    title: "SimplePong",
-    description: "Ping Pong Project that does this and that and is awesome",
-    link: 'https://example.com',
-    demo: 'https://example.com'
-  },
-  {
-    id: 5,
-    img: images.figma,
-    title: "SimplePong",
-    description: "Ping Pong Project that does this and that and is awesome",
-    link: 'https://example.com',
-    demo: 'https://example.com'
-  },
+  // {
+  //   id: 3,
+  //   img: images.figma,
+  //   title: "SimplePong",
+  //   description: "Ping Pong Project that does this and that and is awesome",
+  //   link: 'https://example.com',
+  //   demo: 'https://example.com'
+  // },
+  // {
+  //   id: 4,
+  //   img: images.figma,
+  //   title: "SimplePong",
+  //   description: "Ping Pong Project that does this and that and is awesome",
+  //   link: 'https://example.com',
+  //   demo: 'https://example.com'
+  // },
+  // {
+  //   id: 5,
+  //   img: images.figma,
+  //   title: "SimplePong",
+  //   description: "Ping Pong Project that does this and that and is awesome",
+  //   link: 'https://example.com',
+  //   demo: 'https://example.com'
+  // },
 ];
 
 const Project = ({ id, img, title, description, link, demo, index, setIndex }) => {
-  const Clicked = () => {
-    console.log("CLICKED: " + id);
-    if (index === false) setIndex(id);
-  }
+  const Clicked = () => { if (index === false) setIndex(id); }
 
   return (
     <motion.div layoutId={`${id}`} className='flex flex-col bg-whiteblue w-[300px] h-[200px] rounded-2xl justify-center gap-4 shadow-md' onClick={Clicked}>
@@ -93,7 +90,7 @@ const ProjectModal = ({ index, handleClose }) => {
   const item = projects.find((item) => item.id === index);
   return (
     <>
-      <motion.div layoutId={`${index}`} className='absolute left-0 right-0 top-0 bottom-0 m-auto bg-whiteblue w-[450px] h-[260px] rounded-2xl shadow-lg'>
+      <motion.div layoutId={`${index}`} className='absolute left-0 right-0 top-0 bottom-0 m-auto bg-whiteblue w-[350px] h-[320px] sm:w-[450px] sm:h-[260px] rounded-2xl shadow-lg'>
         <div className='flex flex-col w-full h-full px-3'>
           <div className="flex justify-between">
             <h1 className="text-xl font-semibold pl-5 py-3">{item.title}</h1>
@@ -145,7 +142,7 @@ const Work = () => {
   }, []);
 
   return (
-    <div className='flex flex-col mx-4 sm:mx-10'>
+    <div name='work' className='flex flex-col mx-4 sm:mx-10'>
       <DrawTitle icon={images.pc} title='PROJECTS' />
       <div className='relative my-5 xs:m-10'>
         <div className='flex'>

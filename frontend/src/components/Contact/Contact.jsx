@@ -36,30 +36,29 @@ function Contact() {
   }
 
   return (
-    <div className='flex w-full justify-center mt-16 '>
-
-      <div className='flex flex-col rounded-xl bg-lightblue p-5'>
-          <form onSubmit={handleSubmit} className='flex flex-col max-w-xl w-full'>
-            <div className='pb-8'>
-              <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-900'>Contact</p>
-              <p className='py-4 text-gray-700'>Submit the form below or send me an E-Mail - Viktor.Trojann@gmail.com</p>
-            </div>
-            <input value={sendMail.mail} onChange={setMail} className='rounded-md p-2 border focus:outline-none focus:ring-2' type="email" placeholder='E-Mail' name='mail'></input>
-            <input value={sendMail.subject} onChange={setMail} className='rounded-md my-4 p-2 border focus:outline-none focus:ring-2' placeholder='Subject' name='subject'></input>
-            <textarea value={sendMail.msg} onChange={setMail} className='rounded-md p-2 border focus:outline-none focus:ring-2' name='msg' rows="10" placeholder='Message'></textarea>
-            <div className='mx-auto mt-4'>
-              <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white focus:outline-none">
-                <span className="relative px-5 py-2.5 transition-all ease-in duration-100 bg-white rounded-md group-hover:bg-opacity-0">
-                  Send Message
-                </span>
-              </button>
-            </div>
-          </form>
+    <div className='flex w-full justify-center mt-16'>
+      <div className='flex flex-col pt-2 p-5 h-full bg-whiteblue rounded-2xl w-[95%] sm:w-[550px]'>
+        {/* Indicator close buttons */}
+        <div className='flex gap-2 py-3'>
+          <div className='bg-consolered rounded-full w-4 h-4 sm:w-5 sm:h-5' />
+          <div className='bg-consoleyellow rounded-full w-4 h-4 sm:w-5 sm:h-5' />
+          <div className='bg-consolegreen rounded-full w-4 h-4 sm:w-5 sm:h-5' />
         </div>
+        <form onSubmit={handleSubmit} className='flex flex-col max-w-xl w-full gap-5'>
+          <div>
+            <p className='text-3xl font-bold'>Contact Me</p>
+            <p className='text-gray-800'>Use the form below to send me an E-Mail.</p>
+          </div>
+          <input value={sendMail.mail} onChange={setMail} className='rounded-md p-2 border focus:outline-none focus:ring-2' type="email" placeholder='E-Mail' name='mail'></input>
+          <input value={sendMail.subject} onChange={setMail} className='rounded-md p-2 border focus:outline-none focus:ring-2' placeholder='Subject' name='subject'></input>
+          <textarea value={sendMail.msg} onChange={setMail} className='rounded-md p-2 border focus:outline-none focus:ring-2' name='msg' rows="10" placeholder='Message'></textarea>
 
-        {/* <div className='flex flex-col w-[600px] rounded-xl bg-lightblue px-5 py-5'>
-        <p className='text-3xl font-bold'>Contact Me</p>
-        <p className='text-gray-800'>Use the form below to send me an E-Mail.</p>
+          <Btn name='Send Mail' />
+        </form>
+      </div>
+
+      {/* <div className='flex flex-col w-[600px] rounded-xl bg-lightblue px-5 py-5'>
+        
         <div className='flex flex-col gap-2 my-5'>
           <InputBox className={'flex flex-col w-full h-16 bg-white rounded-2xl border p-2'} title='E-Mail' inp='Max.mustermann@gmail.com' />
           <InputBox className={'flex flex-col w-full h-16 bg-white rounded-2xl border p-2'} title='Subject' inp='Subject goes here' />
@@ -68,8 +67,8 @@ function Contact() {
         <Btn name='Send Mail'/>
       </div> */}
 
-      </div>
-      )
+    </div >
+  )
 }
 
-      export default Contact
+export default Contact

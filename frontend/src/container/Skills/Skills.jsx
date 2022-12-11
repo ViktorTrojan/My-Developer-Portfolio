@@ -15,7 +15,7 @@ const Card = ({ name, icon }) => {
 
 const Skills = () => {
   return (
-    <div className='flex flex-col mx-4 sm:mx-10'>
+    <div name='skills' className='flex flex-col mx-4 sm:mx-10'>
       <div className='flex items-center gap-2'>
         {/* ICON */}
         <div className='flex rounded-full shadow-md w-12 h-12 justify-center items-center'>

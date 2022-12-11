@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import { images } from '../../constants';
 import TypeWriterEffect from 'react-typewriter-effect';
+import Lottie from 'react-lottie';
 
+// TODO: merge this with the one in Contact
 const Console = (text) => {
   return (
     <div className='flex flex-col w-full h-full bg-whiteblue rounded-2xl px-4'>
@@ -53,13 +55,13 @@ const AboutInfo = () => {
 const About = () => {
 
   return (
-    <div name="about" className='flex w-full flex-col md:flex-row gap-10 pt-32 md:pt-20 sm:justify-around'>
+    <div name="home" className='flex w-full flex-col md:flex-row pt-32 md:pt-20 gap-10 md:gap-0 sm:justify-around'>
       <AboutInfo />
       <div className='flex justify-center items-center'>
-        <img className='w-[300px] h-[300px] sm:w-[500px] sm:h-[500px]' src={images.hero1}></img>
+        <div className='w-[300px] h-[300px] lg:w-[500px] lg:h-[500px]'>
+          <Lottie options={{ animationData: images.coding }} />
+        </div>
       </div>
-
-      {/* <h2 className="text-4xl my-4 text-center">I Know that <span>Good Design</span> <br />means  <span>Good Business</span></h2> */}
     </div>
   )
 }
