@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/my-developer-portfolio/static/css/main.98363a0f.css",
-    "main.js": "/my-developer-portfolio/static/js/main.f5c77498.js",
-    "static/media/connect4.png": "/my-developer-portfolio/static/media/connect4.6b22f11bb118d7c9ff47.png",
-    "static/media/javascript.png": "/my-developer-portfolio/static/media/javascript.1707d09a3f6f31bb97e8.png",
-    "static/media/flappybird.png": "/my-developer-portfolio/static/media/flappybird.e86261785a2ba90d092f.png",
-    "static/media/node-js.png": "/my-developer-portfolio/static/media/node-js.e328955d6bbbf3ebc72b.png",
-    "static/media/csharp.png": "/my-developer-portfolio/static/media/csharp.b23c2666276c4ab0980f.png",
-    "static/media/cpp.png": "/my-developer-portfolio/static/media/cpp.1f92cc2ec0aec957e409.png",
-    "static/media/mysql.png": "/my-developer-portfolio/static/media/mysql.537aa50496c24e1c68ad.png",
-    "static/media/css.png": "/my-developer-portfolio/static/media/css.1f49025b450410071845.png",
-    "static/media/java.png": "/my-developer-portfolio/static/media/java.f5dd86c3ef6ef3f85acf.png",
-    "static/media/feather_pen.png": "/my-developer-portfolio/static/media/feather_pen.7e6e419f331a192c90ee.png",
-    "static/media/tailwind.png": "/my-developer-portfolio/static/media/tailwind.7932f3a103037a9d51ec.png",
-    "static/media/figma.png": "/my-developer-portfolio/static/media/figma.590b93a95853dd9cf589.png",
-    "static/media/html.png": "/my-developer-portfolio/static/media/html.1a829767fe5efa958f26.png",
-    "static/media/pc.png": "/my-developer-portfolio/static/media/pc.70f54b1a5b4c4cc853f5.png",
-    "static/media/python.svg": "/my-developer-portfolio/static/media/python.e6d7dc739a91892bbf1f6262412046dd.svg",
-    "index.html": "/my-developer-portfolio/index.html",
-    "static/media/console.svg": "/my-developer-portfolio/static/media/console.f9d2bedad5ed8a280c517531a408afd3.svg",
-    "main.98363a0f.css.map": "/my-developer-portfolio/static/css/main.98363a0f.css.map",
-    "main.f5c77498.js.map": "/my-developer-portfolio/static/js/main.f5c77498.js.map"
+    "main.css": "/My-Developer-Portfolio/static/css/main.98363a0f.css",
+    "main.js": "/My-Developer-Portfolio/static/js/main.37cd980f.js",
+    "static/media/connect4.png": "/My-Developer-Portfolio/static/media/connect4.6b22f11bb118d7c9ff47.png",
+    "static/media/javascript.png": "/My-Developer-Portfolio/static/media/javascript.1707d09a3f6f31bb97e8.png",
+    "static/media/flappybird.png": "/My-Developer-Portfolio/static/media/flappybird.e86261785a2ba90d092f.png",
+    "static/media/node-js.png": "/My-Developer-Portfolio/static/media/node-js.e328955d6bbbf3ebc72b.png",
+    "static/media/csharp.png": "/My-Developer-Portfolio/static/media/csharp.b23c2666276c4ab0980f.png",
+    "static/media/cpp.png": "/My-Developer-Portfolio/static/media/cpp.1f92cc2ec0aec957e409.png",
+    "static/media/mysql.png": "/My-Developer-Portfolio/static/media/mysql.537aa50496c24e1c68ad.png",
+    "static/media/css.png": "/My-Developer-Portfolio/static/media/css.1f49025b450410071845.png",
+    "static/media/java.png": "/My-Developer-Portfolio/static/media/java.f5dd86c3ef6ef3f85acf.png",
+    "static/media/feather_pen.png": "/My-Developer-Portfolio/static/media/feather_pen.7e6e419f331a192c90ee.png",
+    "static/media/tailwind.png": "/My-Developer-Portfolio/static/media/tailwind.7932f3a103037a9d51ec.png",
+    "static/media/figma.png": "/My-Developer-Portfolio/static/media/figma.590b93a95853dd9cf589.png",
+    "static/media/html.png": "/My-Developer-Portfolio/static/media/html.1a829767fe5efa958f26.png",
+    "static/media/pc.png": "/My-Developer-Portfolio/static/media/pc.70f54b1a5b4c4cc853f5.png",
+    "static/media/python.svg": "/My-Developer-Portfolio/static/media/python.e6d7dc739a91892bbf1f6262412046dd.svg",
+    "index.html": "/My-Developer-Portfolio/index.html",
+    "static/media/console.svg": "/My-Developer-Portfolio/static/media/console.f9d2bedad5ed8a280c517531a408afd3.svg",
+    "main.98363a0f.css.map": "/My-Developer-Portfolio/static/css/main.98363a0f.css.map",
+    "main.37cd980f.js.map": "/My-Developer-Portfolio/static/js/main.37cd980f.js.map"
   },
   "entrypoints": [
     "static/css/main.98363a0f.css",
-    "static/js/main.f5c77498.js"
+    "static/js/main.37cd980f.js"
   ]
 }
