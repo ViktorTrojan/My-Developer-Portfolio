@@ -21,7 +21,7 @@ const SocialLinks = () => {
 
   return (
     <div className='flex'>
-      <SocialLink bg='bg-blue-600' link='https://hereuwu' icon={<FaLinkedin size={34} />} />
+      <SocialLink bg='bg-blue-600' link='https://www.linkedin.com/in/viktor-trojan-88406825b' icon={<FaLinkedin size={34} />} />
       <SocialLink bg='bg-[#772f9d]' link='https://github.com/ViktorTrojan' icon={<FaGithub size={34} />} />
       <SocialLink bg='bg-teal-600' link='mailto:viktor.trojann@gmail.com' icon={<HiOutlineMail size={34} />} />
     </div>
